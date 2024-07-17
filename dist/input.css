@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shadow-button {
+  box-shadow: 5px 5px 0px #000000;
+}
+
+.shadow-button-light {
+  box-shadow: 5px 5px 0px #e4e4e4;
+}
+
+.shadow-button-pink {
+  box-shadow: 5px 5px 0px #ec4899;
+}
+
+.team-member:hover .team-member-name {
+  opacity: 1;
+  transform: translate(-50%, -100%);
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group:hover .group-hover\:-translate-y-2 {
+  transform: translateY(-1.5rem);
+}
+
+.group:hover .group-hover\:translate-y-0 {
+  transform: translateY(0);
+}
