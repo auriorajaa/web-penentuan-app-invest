@@ -155,6 +155,9 @@ document.addEventListener('DOMContentLoaded', () => {
             this.querySelector('input').checked = true;
          });
       });
+
+      // Scroll to the top of the container
+      quizContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
    }
 
    function handleNext() {
@@ -195,6 +198,8 @@ document.addEventListener('DOMContentLoaded', () => {
       newWindow.document.write(`
    <html>
    <head>
+      <meta charset="UTF-8">
+
       <!-- Favicon -->
       <link rel="icon" href="/assets/SPK_LOGO.jpg" type="image/x-icon">
 
@@ -248,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <!-- NAVBAR SECTION ENDED -->
 
       <div class="mb-8 text-center">
-         <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black capitalize">Start Your <span class="text-pink-500">Investment</span> Journey with <span class="text-pink-500">${bestApp}</span></h2>
+         <h2 class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black capitalize">Start Your <span class="text-pink-500">Investment</span> Journey with <span class="text-pink-500">${bestApp}</span></h2>
          <p class="mt-4 font-light">Your best application is <strong class="font-semibold">${bestApp}</strong> based on the selected criteria.</p>
          <p class="font-light">The second best option is <strong class="font-semibold">${secondBestApp}</strong>.</p>
       </div>
