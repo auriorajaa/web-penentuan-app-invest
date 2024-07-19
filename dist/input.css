@@ -28,6 +28,11 @@ html {
 
 .shadow-button {
   box-shadow: 5px 5px 0px #000000;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.shadow-button:hover {
+  transform: translateY(-4px);
 }
 
 .shadow-button-light {
@@ -36,6 +41,11 @@ html {
 
 .shadow-button-pink {
   box-shadow: 5px 5px 0px #ec4899;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.shadow-button-pink:hover {
+  transform: translateY(-4px);
 }
 
 .team-member:hover .team-member-name {
@@ -53,4 +63,20 @@ html {
 
 .group:hover .group-hover\:translate-y-0 {
   transform: translateY(0);
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s, background-color 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+.card.selected {
+  background-color: #ec4899; /* bg-pink-500 */
+  color: #fff;
 }
