@@ -193,73 +193,77 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const newWindow = window.open('', '_blank');
       newWindow.document.write(`
-         <html>
-         <head>
-            <!-- Favicon -->
-            <link rel="icon" href="/assets/SPK_LOGO.jpg" type="image/x-icon">
+   <html>
+   <head>
+      <!-- Favicon -->
+      <link rel="icon" href="/assets/SPK_LOGO.jpg" type="image/x-icon">
 
-            <meta name="description" content="BlackMarket - Your go-to platform for making informed investment decisions. Explore comprehensive guides, tools, and resources to navigate financial markets with ease.">
+      <meta name="description" content="BlackMarket - Your go-to platform for making informed investment decisions. Explore comprehensive guides, tools, and resources to navigate financial markets with ease.">
+      
+      <!-- Viewport Meta Tag -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <!-- CSS Links -->
-            <link rel="stylesheet" href="/dist/output.css">
-            <link rel="stylesheet" href="/dist/input.css">
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css">
+      <!-- CSS Links -->
+      <link rel="stylesheet" href="/dist/output.css">
+      <link rel="stylesheet" href="/dist/input.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css">
 
-            <!-- Google Fonts -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-            <title>Start investing and find the best application for you on this website. My best application is ${bestApp}. Check it out and find the app that suits your needs!</title>
-            <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-            <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=669a9699cc04fc0019b7640e&product=inline-share-buttons&source=platform" async="async"></script>
-            
-            <style>
-               /* CSS untuk efek fade-in */
-               body {
-                  opacity: 0;
-                  animation: fadeIn 2s forwards;
-               }
-               @keyframes fadeIn {
-                  to {
-                     opacity: 1;
-                  }
-               }
-            </style>
-         </head>
-         <body class="bg-[#f7f7f7] max-w-screen-lg mx-auto px-3 py-3 sm:px-2 md:px-3 lg:px-3" style="font-family: 'Poppins', sans-serif;">
-            <!-- NAVBAR SECTION STARTED -->
-            <nav class="max-w-screen-lg mx-auto bg-pink-500 rounded-lg m-4">
-               <div class="lg:max-w-screen-lg md:max-w-screen-lg max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
-                  <a href="#" class="flex items-center space-x-2">
-                     <img src="/assets/SPK_LOGO.jpg" class="h-8" alt="Logo">
-                     <span class="self-center text-md lg:text-xl font-bold text-white"><span class="text-black">Black</span>Market</span>
-                  </a>
-                  <div class="flex md:order-2 space-x-1 md:space-x-1 rtl:space-x-reverse">
-                     <a href="/index.html">
-                        <button type="button" class="shadow-button hover:text-pink-500 rounded-lg text-black bg-white transition-transform duration-200 ease-in-out transform hover:translate-y-1 focus:ring-white focus:outline-none focus:border-transparent font-medium text-sm px-4 py-2 text-center">Go to Home</button>
-                     </a>
-                  </div>
-               </div>
-            </nav>
-            <!-- NAVBAR SECTION ENDED -->
-
-            <div class="mb-8 text-center">
-               <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black capitalize">Start Your <span class="text-pink-500">Investment</span> Journey with <span class="text-pink-500">${bestApp}</span></h2>
-               <p class="mt-4 font-light">Your best application is <strong class="font-semibold">${bestApp}</strong> based on the selected criteria.</p>
-               <p class="font-light">The second best option is <strong class="font-semibold">${secondBestApp}</strong>.</p>
+      <title>Start investing and find the best application for you on this website. My best application is ${bestApp}. Check it out and find the app that suits your needs!</title>
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=669a9699cc04fc0019b7640e&product=inline-share-buttons&source=platform" async="async"></script>
+      
+      <style>
+         /* CSS for fade-in effect */
+         body {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+         }
+         @keyframes fadeIn {
+            to {
+               opacity: 1;
+            }
+         }
+      </style>
+   </head>
+   <body class="bg-[#f7f7f7] max-w-screen-lg mx-auto px-4 py-4 sm:px-6 md:px-8 lg:px-10" style="font-family: 'Poppins', sans-serif;">
+      <!-- NAVBAR SECTION STARTED -->
+      <nav class="max-w-screen-lg mx-auto bg-pink-500 rounded-lg m-4">
+         <div class="flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-2">
+               <img src="/assets/SPK_LOGO.jpg" class="h-8" alt="Logo">
+               <span class="text-md lg:text-xl font-bold text-white"><span class="text-black">Black</span>Market</span>
+            </a>
+            <div class="flex space-x-1 rtl:space-x-reverse">
+               <a href="/index.html">
+                  <button type="button" class="shadow-button hover:text-pink-500 rounded-lg text-black bg-white transition-transform duration-200 ease-in-out transform hover:translate-y-1 focus:ring-white focus:outline-none focus:border-transparent font-medium text-sm px-4 py-2 text-center">Go to Home</button>
+               </a>
             </div>
-            <img src="/assets/${bestApp}.png" alt="" class="rounded-lg shadow-button mb-4">
-            
-            <br>
-            
-            <div class="sharethis-inline-share-buttons"></div>
-            <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
-         </body>
-         </html>
-      `);
+         </div>
+      </nav>
+      <!-- NAVBAR SECTION ENDED -->
+
+      <div class="mb-8 text-center">
+         <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black capitalize">Start Your <span class="text-pink-500">Investment</span> Journey with <span class="text-pink-500">${bestApp}</span></h2>
+         <p class="mt-4 font-light">Your best application is <strong class="font-semibold">${bestApp}</strong> based on the selected criteria.</p>
+         <p class="font-light">The second best option is <strong class="font-semibold">${secondBestApp}</strong>.</p>
+      </div>
+      <img src="/assets/${bestApp}.png" alt="" class="rounded-lg shadow-button mb-4 w-full max-w-sm mx-auto">
+      
+      <br>
+      
+      <div class="sharethis-inline-share-buttons"></div>
+      <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+   </body>
+   </html>
+`);
       newWindow.document.close();
+
    }
 
 
