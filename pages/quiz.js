@@ -198,14 +198,12 @@ document.addEventListener('DOMContentLoaded', () => {
       newWindow.document.write(`
    <html>
    <head>
-      <meta charset="UTF-8">
-
       <!-- Favicon -->
       <link rel="icon" href="/assets/SPK_LOGO.jpg" type="image/x-icon">
 
       <meta name="description" content="BlackMarket - Your go-to platform for making informed investment decisions. Explore comprehensive guides, tools, and resources to navigate financial markets with ease.">
       
-      <!-- Viewport Meta Tag -->
+      <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <!-- CSS Links -->
@@ -257,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
          <p class="mt-4 font-light">Your best application is <strong class="font-semibold">${bestApp}</strong> based on the selected criteria.</p>
          <p class="font-light">The second best option is <strong class="font-semibold">${secondBestApp}</strong>.</p>
       </div>
-      <img src="/assets/${bestApp}.png" alt="" class="rounded-lg shadow-button mb-4 w-full max-w-sm mx-auto">
+      <img src="/assets/${bestApp}.png" alt="" class="rounded-lg shadow-button mb-4 w-full mx-auto">
       
       <br>
       
