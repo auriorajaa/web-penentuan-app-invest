@@ -53,7 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
             Stockbit: 6,
             Bibit: 5,
             IPOT: 4
-         }
+         },
+         isCost: true  // Menandai ini sebagai kriteria cost
       },
       // Kriteria 4: Keamanan (Security)
       {
@@ -162,9 +163,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
       questions.forEach((question, index) => {
          const weight = userWeights[index];
-         Object.keys(question.scores).forEach(app => {
-            totalScores[app] += question.scores[app] * weight;
-         });
+         if (question.isCost) {
+            // Untuk kriteria cost, kita mencari nilai minimum
+            const minScore = Math.min(...Object.values(question.scores));
+            Object.keys(question.scores).forEach(app => {
+               totalScores[app] += (minScore / question.scores[app]) * weight;
+            });
+         } else {
+            // Untuk kriteria benefit, perhitungan tetap sama
+            Object.keys(question.scores).forEach(app => {
+               totalScores[app] += question.scores[app] * weight;
+            });
+         }
       });
 
       console.log("Total Scores Before Normalization:", totalScores);
