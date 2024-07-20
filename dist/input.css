@@ -80,3 +80,14 @@ html {
   background-color: #ec4899; /* bg-pink-500 */
   color: #fff;
 }
+
+.overflow-x-auto {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.sticky {
+  position: sticky;
+}
+.left-0 {
+  left: 0;
+}
