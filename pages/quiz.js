@@ -101,9 +101,9 @@ document.addEventListener('DOMContentLoaded', () => {
          ],
          scores: {
             IPOT: 9,
-            Ajaib: 8,
+            Bareksa: 8,
             Stockbit: 7,
-            Bareksa: 6,
+            Ajaib: 6,
             Bibit: 5
          }
       }
