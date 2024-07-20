@@ -8,51 +8,54 @@ document.addEventListener('DOMContentLoaded', () => {
       {
          question: 'Seberapa penting kemudahan penggunaan dalam memilih platform investasi bagi Anda?',
          options: [
-            { text: 'Kemudahan penggunaan sangat penting, karena saya ingin memilih platform yang mudah dipahami dan digunakan.', weight: 0.4 },
-            { text: 'Kemudahan penggunaan cukup penting, tetapi saya juga memperhitungkan fitur lainnya.', weight: 0.3 },
-            { text: 'Kemudahan penggunaan agak penting, tetapi saya dapat beradaptasi dengan antarmuka yang lebih kompleks.', weight: 0.2 },
-            { text: 'Kemudahan penggunaan kurang penting bagi saya, asalkan platform menawarkan fitur yang kuat.', weight: 0.1 },
+            { text: 'Kemudahan penggunaan sangat penting, karena saya ingin memilih platform yang mudah dipahami dan digunakan.', weight: 0.5 },
+            { text: 'Kemudahan penggunaan cukup penting, tetapi saya juga memperhitungkan fitur lainnya.', weight: 0.4 },
+            { text: 'Kemudahan penggunaan agak penting, tetapi saya dapat beradaptasi dengan antarmuka yang lebih kompleks.', weight: 0.3 },
+            { text: 'Kemudahan penggunaan kurang penting bagi saya, asalkan platform menawarkan fitur yang kuat.', weight: 0.2 },
+            { text: 'Kemudahan penggunaan bukan prioritas utama saya dalam memilih platform investasi.', weight: 0.1 },
          ],
          scores: {
             Bibit: 9,
-            Stockbit: 7,
-            IPOT: 6,
-            Ajaib: 5,
-            Bareksa: 4
+            Stockbit: 8,
+            IPOT: 7,
+            Ajaib: 8,
+            Bareksa: 6
          }
       },
       // Kriteria 2: Fitur Edukasi (Educational Features)
       {
          question: 'Seberapa penting fitur edukasi dalam memilih platform investasi bagi Anda?',
          options: [
-            { text: 'Fitur edukasi sangat penting karena saya ingin memahami investasi dengan lebih baik sebelum memulai.', weight: 0.4 },
-            { text: 'Fitur edukasi cukup penting, namun saya lebih fokus pada kemudahan transaksi.', weight: 0.3 },
-            { text: 'Fitur edukasi agak penting, tetapi saya lebih memilih platform dengan biaya rendah.', weight: 0.2 },
-            { text: 'Fitur edukasi kurang penting, saya lebih memperhatikan aspek keamanan.', weight: 0.1 },
+            { text: 'Fitur edukasi sangat penting karena saya ingin memahami investasi dengan lebih baik sebelum memulai.', weight: 0.5 },
+            { text: 'Fitur edukasi cukup penting, namun saya lebih fokus pada kemudahan transaksi.', weight: 0.4 },
+            { text: 'Fitur edukasi agak penting, tetapi saya lebih memilih platform dengan biaya rendah.', weight: 0.3 },
+            { text: 'Fitur edukasi kurang penting, saya lebih memperhatikan aspek keamanan.', weight: 0.2 },
+            { text: 'Fitur edukasi bukan prioritas saya dalam memilih platform investasi.', weight: 0.1 },
          ],
          scores: {
-            Stockbit: 8,
-            IPOT: 7,
-            Ajaib: 6,
-            Bareksa: 5,
-            Bibit: 4
+            Stockbit: 9,
+            IPOT: 8,
+            Ajaib: 7,
+            Bareksa: 7,
+            Bibit: 6
          }
       },
       // Kriteria 3: Biaya Transaksi (Transaction Costs)
       {
          question: 'Seberapa penting biaya transaksi dalam memilih platform investasi bagi Anda?',
          options: [
-            { text: 'Biaya transaksi yang sangat rendah adalah prioritas utama saya dalam memilih platform.', weight: 0.4 },
-            { text: 'Saya memperhatikan biaya transaksi, tetapi juga memperhitungkan fitur lain yang ditawarkan.', weight: 0.3 },
-            { text: 'Biaya transaksi menjadi pertimbangan, namun dukungan pelanggan yang berkualitas lebih penting bagi saya.', weight: 0.2 },
-            { text: 'Biaya transaksi kurang penting, terutama jika platform menyediakan berbagai instrumen investasi.', weight: 0.1 },
+            { text: 'Biaya transaksi yang sangat rendah adalah prioritas utama saya dalam memilih platform.', weight: 0.5 },
+            { text: 'Saya memperhatikan biaya transaksi, tetapi juga memperhitungkan fitur lain yang ditawarkan.', weight: 0.4 },
+            { text: 'Biaya transaksi menjadi pertimbangan, namun dukungan pelanggan yang berkualitas lebih penting bagi saya.', weight: 0.3 },
+            { text: 'Biaya transaksi kurang penting, terutama jika platform menyediakan berbagai instrumen investasi.', weight: 0.2 },
+            { text: 'Biaya transaksi bukan faktor utama dalam keputusan saya memilih platform investasi.', weight: 0.1 },
          ],
          scores: {
             Ajaib: 9,
-            Bareksa: 7,
-            Stockbit: 6,
-            Bibit: 5,
-            IPOT: 4
+            Bareksa: 8,
+            Stockbit: 7,
+            Bibit: 6,
+            IPOT: 5
          },
          isCost: true  // Menandai ini sebagai kriteria cost
       },
@@ -60,51 +63,54 @@ document.addEventListener('DOMContentLoaded', () => {
       {
          question: 'Seberapa penting aspek keamanan dalam memilih platform investasi bagi Anda?',
          options: [
-            { text: 'Keamanan sangat penting, karena saya ingin memastikan dana dan data pribadi saya aman.', weight: 0.4 },
-            { text: 'Keamanan cukup penting, namun saya juga memperhitungkan aspek kemudahan penggunaan.', weight: 0.3 },
-            { text: 'Keamanan agak penting, tetapi saya lebih memilih platform dengan biaya transaksi yang rendah.', weight: 0.2 },
-            { text: 'Keamanan kurang penting, saya lebih memperhatikan fitur edukasi yang ditawarkan.', weight: 0.1 },
+            { text: 'Keamanan sangat penting, karena saya ingin memastikan dana dan data pribadi saya aman.', weight: 0.5 },
+            { text: 'Keamanan cukup penting, namun saya juga memperhitungkan aspek kemudahan penggunaan.', weight: 0.4 },
+            { text: 'Keamanan agak penting, tetapi saya lebih memilih platform dengan biaya transaksi yang rendah.', weight: 0.3 },
+            { text: 'Keamanan kurang penting, saya lebih memperhatikan fitur edukasi yang ditawarkan.', weight: 0.2 },
+            { text: 'Keamanan bukan prioritas utama saya dalam memilih platform investasi.', weight: 0.1 },
          ],
          scores: {
             Bibit: 9,
-            IPOT: 8,
-            Ajaib: 7,
-            Stockbit: 6,
-            Bareksa: 5
+            IPOT: 9,
+            Ajaib: 8,
+            Stockbit: 8,
+            Bareksa: 7
          }
       },
       // Kriteria 5: Dukungan Pelanggan (Customer Support)
       {
          question: 'Seberapa penting dukungan pelanggan dalam memilih platform investasi bagi Anda?',
          options: [
-            { text: 'Dukungan pelanggan sangat penting, karena saya ingin mendapatkan bantuan cepat saat mengalami masalah.', weight: 0.4 },
-            { text: 'Dukungan pelanggan cukup penting, namun saya juga mempertimbangkan biaya transaksi.', weight: 0.3 },
-            { text: 'Dukungan pelanggan agak penting, tetapi saya lebih memilih platform dengan fitur edukasi yang baik.', weight: 0.2 },
-            { text: 'Dukungan pelanggan kurang penting, saya lebih memperhatikan ketersediaan instrumen investasi.', weight: 0.1 },
+            { text: 'Dukungan pelanggan sangat penting, karena saya ingin mendapatkan bantuan cepat saat mengalami masalah.', weight: 0.5 },
+            { text: 'Dukungan pelanggan cukup penting, namun saya juga mempertimbangkan biaya transaksi.', weight: 0.4 },
+            { text: 'Dukungan pelanggan agak penting, tetapi saya lebih memilih platform dengan fitur edukasi yang baik.', weight: 0.3 },
+            { text: 'Dukungan pelanggan kurang penting, saya lebih memperhatikan ketersediaan instrumen investasi.', weight: 0.2 },
+            { text: 'Dukungan pelanggan bukan faktor utama dalam keputusan saya memilih platform investasi.', weight: 0.1 },
          ],
          scores: {
             Stockbit: 9,
             Bibit: 8,
-            Ajaib: 7,
-            IPOT: 6,
-            Bareksa: 5
+            Ajaib: 8,
+            IPOT: 7,
+            Bareksa: 6
          }
       },
       // Kriteria 6: Ketersediaan Instrumen Investasi (Availability of Investment Instruments)
       {
          question: 'Seberapa penting ketersediaan berbagai instrumen investasi dalam memilih platform bagi Anda?',
          options: [
-            { text: 'Ketersediaan berbagai instrumen investasi sangat penting, karena saya ingin memiliki banyak pilihan investasi.', weight: 0.4 },
-            { text: 'Ketersediaan instrumen investasi cukup penting, namun saya juga memperhatikan aspek keamanan.', weight: 0.3 },
-            { text: 'Ketersediaan instrumen investasi agak penting, tetapi saya lebih memilih platform dengan biaya transaksi yang rendah.', weight: 0.2 },
-            { text: 'Ketersediaan instrumen investasi kurang penting, saya lebih memperhatikan kemudahan penggunaan platform.', weight: 0.1 },
+            { text: 'Ketersediaan berbagai instrumen investasi sangat penting, karena saya ingin memiliki banyak pilihan investasi.', weight: 0.5 },
+            { text: 'Ketersediaan instrumen investasi cukup penting, namun saya juga memperhatikan aspek keamanan.', weight: 0.4 },
+            { text: 'Ketersediaan instrumen investasi agak penting, tetapi saya lebih memilih platform dengan biaya transaksi yang rendah.', weight: 0.3 },
+            { text: 'Ketersediaan instrumen investasi kurang penting, saya lebih memperhatikan kemudahan penggunaan platform.', weight: 0.2 },
+            { text: 'Ketersediaan instrumen investasi bukan prioritas utama saya dalam memilih platform investasi.', weight: 0.1 },
          ],
          scores: {
             IPOT: 9,
             Bareksa: 8,
             Stockbit: 7,
-            Ajaib: 6,
-            Bibit: 5
+            Ajaib: 8,
+            Bibit: 6
          }
       }
    ];
@@ -115,14 +121,14 @@ document.addEventListener('DOMContentLoaded', () => {
    function loadQuestion() {
       const question = questions[currentQuestionIndex];
       quizContainer.innerHTML = `
-                <h2 class="text-2xl sm:text-2xl md:text-5xl capitalize font-bold mb-4">${question.question}</h2>
-                ${question.options.map((option, index) => `
-                    <div class="card mb-2" data-weight="${option.weight}">
-                        <input type="radio" id="option${index}" name="option" value="${option.weight}" class="mr-2" />
-                        <label for="option${index}" class="cursor-pointer">${option.text}</label>
-                    </div>
-                `).join('')}
-            `;
+         <h2 class="text-2xl sm:text-2xl md:text-5xl capitalize font-bold mb-4">${question.question}</h2>
+         ${question.options.map((option, index) => `
+            <div class="card mb-2" data-weight="${option.weight}">
+               <input type="radio" id="option${index}" name="option" value="${option.weight}" class="mr-2" />
+               <label for="option${index}" class="cursor-pointer">${option.text}</label>
+            </div>
+         `).join('')}
+      `;
       nextBtn.classList.remove('hidden');
 
       document.querySelectorAll('.card').forEach(card => {
@@ -164,13 +170,11 @@ document.addEventListener('DOMContentLoaded', () => {
       questions.forEach((question, index) => {
          const weight = userWeights[index];
          if (question.isCost) {
-            // Untuk kriteria cost, kita mencari nilai minimum
-            const minScore = Math.min(...Object.values(question.scores));
+            const maxScore = Math.max(...Object.values(question.scores));
             Object.keys(question.scores).forEach(app => {
-               totalScores[app] += (minScore / question.scores[app]) * weight;
+               totalScores[app] += ((maxScore - question.scores[app]) / maxScore) * weight;
             });
          } else {
-            // Untuk kriteria benefit, perhitungan tetap sama
             Object.keys(question.scores).forEach(app => {
                totalScores[app] += question.scores[app] * weight;
             });
@@ -179,28 +183,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
       console.log("Total Scores Before Normalization:", totalScores);
 
+      // Normalisasi skor total
       const maxScore = Math.max(...Object.values(totalScores));
-      const normalizedScores = { ...totalScores };
-      Object.keys(normalizedScores).forEach(app => {
-         normalizedScores[app] = (normalizedScores[app] / maxScore).toFixed(2);
-      });
+      const normalizedScores = {};  // Pastikan normalizedScores didefinisikan
 
-      console.log("Normalized Scores:", normalizedScores);
+      if (maxScore > 0) {
+         Object.keys(totalScores).forEach(app => {
+            normalizedScores[app] = (totalScores[app] / maxScore).toFixed(2);
+         });
 
-      const sortedResults = Object.entries(normalizedScores).sort((a, b) => b[1] - a[1]);
-      const bestApp = sortedResults[0][0];
-      const secondBestApp = sortedResults[1][0];
+         console.log("Normalized Scores:", normalizedScores);
 
-      const reasons = {
-         Bibit: 'Bibit is chosen for its excellent ease of use and educational features.',
-         Stockbit: 'Stockbit stands out due to its competitive transaction costs and good customer support.',
-         IPOT: 'IPOT excels in the availability of investment instruments and high data security.',
-         Ajaib: 'Ajaib offers low transaction costs and responsive customer support.',
-         Bareksa: 'Bareksa has solid educational features and reasonable transaction costs.'
-      };
+         const sortedResults = Object.entries(normalizedScores).sort((a, b) => b[1] - a[1]);
+         const bestApp = sortedResults[0][0];
+         const secondBestApp = sortedResults[1][0];
 
-      const newWindow = window.open('', '_blank');
-      newWindow.document.write(`
+         // Output hasil terbaik
+         console.log(`Aplikasi terbaik: ${bestApp}`);
+         console.log(`Aplikasi kedua terbaik: ${secondBestApp}`);
+
+         const reasons = {
+            Bibit: 'Bibit is chosen for its excellent ease of use and educational features.',
+            Stockbit: 'Stockbit stands out due to its competitive transaction costs and good customer support.',
+            IPOT: 'IPOT excels in the availability of investment instruments and high data security.',
+            Ajaib: 'Ajaib offers low transaction costs and responsive customer support.',
+            Bareksa: 'Bareksa has solid educational features and reasonable transaction costs.'
+         };
+
+         const newWindow = window.open('', '_blank');
+         newWindow.document.write(`
                 <html>
                 <head>
                     <link rel="icon" href="/assets/SPK_LOGO.jpg" type="image/x-icon">
@@ -250,26 +261,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <img src="/assets/${bestApp}.png" alt="${bestApp}" class="rounded-lg shadow-button mb-4 w-full mx-auto">
                     <div class="mt-8 overflow-x-auto">
-    <h3 class="text-2xl font-bold mb-4">SAW Table</h3>
-    <div class="inline-block min-w-full rounded-lg overflow-hidden">
-        <table class="min-w-full bg-white">
-            <thead class="bg-gray-100">
-                <tr>
-                    <th class="sticky left-0 bg-gray-100 py-2 px-4 border-b">Criteria</th>
-                    ${Object.keys(totalScores).map(app => `<th class="py-2 px-4 border-b">${app}</th>`).join('')}
-                </tr>
-            </thead>
-            <tbody>
-                ${questions.map((question, index) => `
-                    <tr>
-                        <td class="sticky left-0 bg-white py-2 px-4 border-b">${question.question}</td>
-                        ${Object.keys(totalScores).map(app => `<td class="py-2 px-4 border-b">${(question.scores[app] * userWeights[index]).toFixed(2)}</td>`).join('')}
-                    </tr>
-                `).join('')}
-            </tbody>
-        </table>
-    </div>
-</div>
+                        <h3 class="text-2xl font-bold mb-4">SAW Table</h3>
+                        <div class="inline-block min-w-full rounded-lg overflow-hidden">
+                           <table class="min-w-full bg-white">
+                                 <thead class="bg-gray-100">
+                                    <tr>
+                                       <th class="sticky left-0 bg-gray-100 py-2 px-4 border-b">Criteria</th>
+                                       ${Object.keys(totalScores).map(app => `<th class="py-2 px-4 border-b">${app}</th>`).join('')}
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    ${questions.map((question, index) => `
+                                       <tr>
+                                             <td class="sticky left-0 bg-white py-2 px-4 border-b">${question.question}</td>
+                                             ${Object.keys(totalScores).map(app => `<td class="py-2 px-4 border-b">${(question.scores[app] * userWeights[index]).toFixed(2)}</td>`).join('')}
+                                       </tr>
+                                    `).join('')}
+                                 </tbody>
+                           </table>
+                        </div>
+                     </div>
                     <div class="mt-8">
                         <h3 class="text-2xl font-bold mb-4">Normalized Scores</h3>
                         <table class="min-w-full bg-white rounded-lg overflow-hidden">
@@ -295,7 +306,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 </body>
                 </html>
             `);
-      newWindow.document.close();
+         newWindow.document.close();
+
+      } else {
+         console.log("Tidak ada skor yang valid untuk normalisasi.");
+      }
+
    }
 
    nextBtn.addEventListener('click', handleNext);
