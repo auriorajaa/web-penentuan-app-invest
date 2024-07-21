@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
          ],
          maxWeight: 0.2,
          scores: {
-            Bibit: 9,
-            Stockbit: 8,
-            IPOT: 7,
-            Ajaib: 8,
-            Bareksa: 6
+            Stockbit: 9,
+            Bibit: 8,
+            Ajaib: 7,
+            Bareksa: 6,
+            IPOT: 5
          }
       },
       // Kriteria 2: Fitur Edukasi (Educational Features)
@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
          ],
          maxWeight: 0.15,
          scores: {
-            Stockbit: 9,
-            IPOT: 8,
-            Ajaib: 7,
+            IPOT: 9,
+            Ajaib: 8,
             Bareksa: 7,
-            Bibit: 6
+            Stockbit: 6,
+            Bibit: 5
          }
       },
       // Kriteria 3: Biaya Transaksi (Transaction Costs)
@@ -54,13 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
          ],
          maxWeight: 0.2,
          scores: {
-            Ajaib: 9,
-            Bareksa: 8,
-            Stockbit: 7,
-            Bibit: 6,
+            Bareksa: 9,
+            Bibit: 8,
+            Ajaib: 7,
+            Stockbit: 6,
             IPOT: 5
          },
-         isCost: true  // Menandai ini sebagai kriteria cost
+         isCost: true
       },
       // Kriteria 4: Keamanan (Security)
       {
@@ -75,10 +75,10 @@ document.addEventListener('DOMContentLoaded', () => {
          maxWeight: 0.2,
          scores: {
             Bibit: 9,
-            IPOT: 9,
-            Ajaib: 8,
-            Stockbit: 8,
-            Bareksa: 7
+            IPOT: 8,
+            Stockbit: 7,
+            Bareksa: 7,
+            Ajaib: 5
          }
       },
       // Kriteria 5: Dukungan Pelanggan (Customer Support)
@@ -93,11 +93,11 @@ document.addEventListener('DOMContentLoaded', () => {
          ],
          maxWeight: 0.1,
          scores: {
-            Stockbit: 9,
-            Bibit: 8,
+            Bareksa: 9,
             Ajaib: 8,
-            IPOT: 7,
-            Bareksa: 6
+            Bibit: 7,
+            Stockbit: 6,
+            IPOT: 5
          }
       },
       // Kriteria 6: Ketersediaan Instrumen Investasi (Availability of Investment Instruments)
@@ -112,11 +112,11 @@ document.addEventListener('DOMContentLoaded', () => {
          ],
          maxWeight: 0.15,
          scores: {
-            IPOT: 9,
-            Bareksa: 6,
-            Stockbit: 9,
             Ajaib: 9,
-            Bibit: 8
+            Stockbit: 6,
+            IPOT: 7,
+            Bibit: 6,
+            Bareksa: 9
          }
       }
    ];
