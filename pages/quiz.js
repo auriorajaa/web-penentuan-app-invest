@@ -4,15 +4,15 @@ document.addEventListener('DOMContentLoaded', () => {
    const results = document.getElementById('results');
 
    const questions = [
-      // Kriteria 1: Kemudahan Penggunaan (Ease of Use)
+      // Criterion 1: Ease of Use
       {
-         question: 'Seberapa penting kemudahan penggunaan dalam memilih platform investasi bagi Anda?',
+         question: 'How important is ease of use when choosing an investment platform for you?',
          options: [
-            { text: 'Kemudahan penggunaan sangat penting, karena saya ingin memilih platform yang mudah dipahami dan digunakan.', weight: 1.0 },
-            { text: 'Kemudahan penggunaan cukup penting, tetapi saya juga memperhitungkan fitur lainnya.', weight: 0.75 },
-            { text: 'Kemudahan penggunaan agak penting, tetapi saya dapat beradaptasi dengan antarmuka yang lebih kompleks.', weight: 0.5 },
-            { text: 'Kemudahan penggunaan kurang penting bagi saya, asalkan platform menawarkan fitur yang kuat.', weight: 0.25 },
-            { text: 'Kemudahan penggunaan bukan prioritas utama saya dalam memilih platform investasi.', weight: 0 },
+            { text: 'Ease of use is very important because I want to choose a platform that is easy to understand and use.', weight: 1.0 },
+            { text: 'Ease of use is quite important, but I also consider other features.', weight: 0.75 },
+            { text: 'Ease of use is somewhat important, but I can adapt to a more complex interface.', weight: 0.5 },
+            { text: 'Ease of use is less important to me, as long as the platform offers strong features.', weight: 0.25 },
+            { text: 'Ease of use is not my primary concern when choosing an investment platform.', weight: 0 },
          ],
          maxWeight: 0.2,
          scores: {
@@ -23,15 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
             IPOT: 5
          }
       },
-      // Kriteria 2: Fitur Edukasi (Educational Features)
+      // Criterion 2: Educational Features
       {
-         question: 'Seberapa penting fitur edukasi dalam memilih platform investasi bagi Anda?',
+         question: 'How important are educational features when choosing an investment platform for you?',
          options: [
-            { text: 'Fitur edukasi sangat penting karena saya ingin memahami investasi dengan lebih baik sebelum memulai.', weight: 1.0 },
-            { text: 'Fitur edukasi cukup penting, namun saya lebih fokus pada kemudahan transaksi.', weight: 0.75 },
-            { text: 'Fitur edukasi agak penting, tetapi saya lebih memilih platform dengan biaya rendah.', weight: 0.5 },
-            { text: 'Fitur edukasi kurang penting, saya lebih memperhatikan aspek keamanan.', weight: 0.25 },
-            { text: 'Fitur edukasi bukan prioritas saya dalam memilih platform investasi.', weight: 0 },
+            { text: 'Educational features are very important because I want to better understand investing before starting.', weight: 1.0 },
+            { text: 'Educational features are quite important, but I focus more on transaction ease.', weight: 0.75 },
+            { text: 'Educational features are somewhat important, but I prefer platforms with low fees.', weight: 0.5 },
+            { text: 'Educational features are less important; I focus more on security aspects.', weight: 0.25 },
+            { text: 'Educational features are not a priority for me when choosing an investment platform.', weight: 0 },
          ],
          maxWeight: 0.15,
          scores: {
@@ -42,15 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
             Bibit: 5
          }
       },
-      // Kriteria 3: Biaya Transaksi (Transaction Costs)
+      // Criterion 3: Transaction Costs
       {
-         question: 'Seberapa penting biaya transaksi dalam memilih platform investasi bagi Anda?',
+         question: 'How important are transaction costs when choosing an investment platform for you?',
          options: [
-            { text: 'Biaya transaksi yang sangat rendah adalah prioritas utama saya dalam memilih platform.', weight: 1.0 },
-            { text: 'Saya memperhatikan biaya transaksi, tetapi juga memperhitungkan fitur lain yang ditawarkan.', weight: 0.75 },
-            { text: 'Biaya transaksi menjadi pertimbangan, namun dukungan pelanggan yang berkualitas lebih penting bagi saya.', weight: 0.5 },
-            { text: 'Biaya transaksi kurang penting, terutama jika platform menyediakan berbagai instrumen investasi.', weight: 0.25 },
-            { text: 'Biaya transaksi bukan faktor utama dalam keputusan saya memilih platform investasi.', weight: 0 },
+            { text: 'Very low transaction costs are my top priority when choosing a platform.', weight: 1.0 },
+            { text: 'I consider transaction costs, but I also take other features into account.', weight: 0.75 },
+            { text: 'Transaction costs are a consideration, but high-quality customer support is more important to me.', weight: 0.5 },
+            { text: 'Transaction costs are less important, especially if the platform provides a variety of investment instruments.', weight: 0.25 },
+            { text: 'Transaction costs are not a major factor in my decision to choose an investment platform.', weight: 0 },
          ],
          maxWeight: 0.2,
          scores: {
@@ -62,15 +62,15 @@ document.addEventListener('DOMContentLoaded', () => {
          },
          isCost: true
       },
-      // Kriteria 4: Keamanan (Security)
+      // Criterion 4: Security
       {
-         question: 'Seberapa penting aspek keamanan dalam memilih platform investasi bagi Anda?',
+         question: 'How important is security when choosing an investment platform for you?',
          options: [
-            { text: 'Keamanan sangat penting, karena saya ingin memastikan dana dan data pribadi saya aman.', weight: 1.0 },
-            { text: 'Keamanan cukup penting, namun saya juga memperhitungkan aspek kemudahan penggunaan.', weight: 0.75 },
-            { text: 'Keamanan agak penting, tetapi saya lebih memilih platform dengan biaya transaksi yang rendah.', weight: 0.5 },
-            { text: 'Keamanan kurang penting, saya lebih memperhatikan fitur edukasi yang ditawarkan.', weight: 0.25 },
-            { text: 'Keamanan bukan prioritas utama saya dalam memilih platform investasi.', weight: 0 },
+            { text: 'Security is very important because I want to ensure my funds and personal data are safe.', weight: 1.0 },
+            { text: 'Security is quite important, but I also consider ease of use.', weight: 0.75 },
+            { text: 'Security is somewhat important, but I prefer platforms with low transaction costs.', weight: 0.5 },
+            { text: 'Security is less important; I focus more on the educational features offered.', weight: 0.25 },
+            { text: 'Security is not my primary concern when choosing an investment platform.', weight: 0 },
          ],
          maxWeight: 0.2,
          scores: {
@@ -81,15 +81,15 @@ document.addEventListener('DOMContentLoaded', () => {
             Ajaib: 5
          }
       },
-      // Kriteria 5: Dukungan Pelanggan (Customer Support)
+      // Criterion 5: Customer Support
       {
-         question: 'Seberapa penting dukungan pelanggan dalam memilih platform investasi bagi Anda?',
+         question: 'How important is customer support when choosing an investment platform for you?',
          options: [
-            { text: 'Dukungan pelanggan sangat penting, karena saya ingin mendapatkan bantuan cepat saat mengalami masalah.', weight: 1.0 },
-            { text: 'Dukungan pelanggan cukup penting, namun saya juga mempertimbangkan biaya transaksi.', weight: 0.75 },
-            { text: 'Dukungan pelanggan agak penting, tetapi saya lebih memilih platform dengan fitur edukasi yang baik.', weight: 0.5 },
-            { text: 'Dukungan pelanggan kurang penting, saya lebih memperhatikan ketersediaan instrumen investasi.', weight: 0.25 },
-            { text: 'Dukungan pelanggan bukan faktor utama dalam keputusan saya memilih platform investasi.', weight: 0 },
+            { text: 'Customer support is very important because I want quick assistance when I encounter issues.', weight: 1.0 },
+            { text: 'Customer support is quite important, but I also consider transaction costs.', weight: 0.75 },
+            { text: 'Customer support is somewhat important, but I prefer platforms with good educational features.', weight: 0.5 },
+            { text: 'Customer support is less important; I focus more on the availability of investment instruments.', weight: 0.25 },
+            { text: 'Customer support is not a major factor in my decision to choose an investment platform.', weight: 0 },
          ],
          maxWeight: 0.1,
          scores: {
@@ -100,15 +100,15 @@ document.addEventListener('DOMContentLoaded', () => {
             IPOT: 5
          }
       },
-      // Kriteria 6: Ketersediaan Instrumen Investasi (Availability of Investment Instruments)
+      // Criterion 6: Availability of Investment Instruments
       {
-         question: 'Seberapa penting ketersediaan berbagai instrumen investasi dalam memilih platform bagi Anda?',
+         question: 'How important is the availability of various investment instruments when choosing a platform for you?',
          options: [
-            { text: 'Ketersediaan berbagai instrumen investasi sangat penting, karena saya ingin memiliki banyak pilihan investasi.', weight: 1.0 },
-            { text: 'Ketersediaan instrumen investasi cukup penting, namun saya juga memperhatikan aspek keamanan.', weight: 0.75 },
-            { text: 'Ketersediaan instrumen investasi agak penting, tetapi saya lebih memilih platform dengan biaya transaksi yang rendah.', weight: 0.5 },
-            { text: 'Ketersediaan instrumen investasi kurang penting, saya lebih memperhatikan kemudahan penggunaan platform.', weight: 0.25 },
-            { text: 'Ketersediaan instrumen investasi bukan prioritas utama saya dalam memilih platform investasi.', weight: 0 },
+            { text: 'The availability of various investment instruments is very important because I want to have many investment options.', weight: 1.0 },
+            { text: 'The availability of investment instruments is quite important, but I also consider security aspects.', weight: 0.75 },
+            { text: 'The availability of investment instruments is somewhat important, but I prefer platforms with low transaction costs.', weight: 0.5 },
+            { text: 'The availability of investment instruments is less important; I focus more on the ease of use of the platform.', weight: 0.25 },
+            { text: 'The availability of investment instruments is not a primary concern when choosing an investment platform.', weight: 0 },
          ],
          maxWeight: 0.15,
          scores: {
@@ -120,6 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
          }
       }
    ];
+
 
    let currentQuestionIndex = 0;
    let userWeights = [];
