@@ -267,9 +267,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     </nav>
                     <div class="mb-8 text-center">
                         <h2 class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black capitalize">Start Your <span class="text-pink-500">Investment</span> Journey with <span class="text-pink-500">${bestApp}</span></h2>
-                        <p class="mt-4 font-light">Your best application is <strong class="font-semibold">${bestApp}</strong> based on the selected criteria.</p>
-                        <p class="font-light">The second best option is <strong class="font-semibold">${secondBestApp}</strong>.</p>
-                        <p class="mt-4">${reasons[bestApp]}</p>
+                        <p class="mt-4 font-light text-gray-500">Your best application is <strong class="font-semibold text-black">${bestApp}</strong> based on the selected criteria.</p>
+                        <p class="font-light text-gray-500">The second best option is <strong class="font-semibold text-black">${secondBestApp}</strong>.</p>
+                        <p class="mt-4 font-normal italic">${reasons[bestApp]}</p>
                     </div>
                     <img src="/assets/${bestApp}.png" alt="${bestApp}" class="rounded-lg shadow-button mb-4 w-full mx-auto">
                     <div class="mt-8 overflow-x-auto">
@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                        ${Object.keys(totalScores).map(app => `<th class="py-2 px-4 border-b">${app}</th>`).join('')}
                                     </tr>
                                  </thead>
-                                 <tbody>
+                                 <tbody class="text-gray-500">
                                     ${questions.map((question, index) => `
                                        <tr>
                                              <td class="sticky left-0 bg-white py-2 px-4 border-b">${question.question}</td>
@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <th class="py-2 px-4 border-b">Normalized Score</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="text-gray-500">
                                 ${sortedResults.map(([app, score]) => `
                                     <tr>
                                         <td class="py-2 px-4 border-b">${app}</td>
