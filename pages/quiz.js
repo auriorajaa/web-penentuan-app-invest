@@ -8,12 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
       {
          question: 'Seberapa penting kemudahan penggunaan dalam memilih platform investasi bagi Anda?',
          options: [
-            { text: 'Kemudahan penggunaan sangat penting, karena saya ingin memilih platform yang mudah dipahami dan digunakan.', weight: 0.5 },
-            { text: 'Kemudahan penggunaan cukup penting, tetapi saya juga memperhitungkan fitur lainnya.', weight: 0.4 },
-            { text: 'Kemudahan penggunaan agak penting, tetapi saya dapat beradaptasi dengan antarmuka yang lebih kompleks.', weight: 0.3 },
-            { text: 'Kemudahan penggunaan kurang penting bagi saya, asalkan platform menawarkan fitur yang kuat.', weight: 0.2 },
-            { text: 'Kemudahan penggunaan bukan prioritas utama saya dalam memilih platform investasi.', weight: 0.1 },
+            { text: 'Kemudahan penggunaan sangat penting, karena saya ingin memilih platform yang mudah dipahami dan digunakan.', weight: 1.0 },
+            { text: 'Kemudahan penggunaan cukup penting, tetapi saya juga memperhitungkan fitur lainnya.', weight: 0.75 },
+            { text: 'Kemudahan penggunaan agak penting, tetapi saya dapat beradaptasi dengan antarmuka yang lebih kompleks.', weight: 0.5 },
+            { text: 'Kemudahan penggunaan kurang penting bagi saya, asalkan platform menawarkan fitur yang kuat.', weight: 0.25 },
+            { text: 'Kemudahan penggunaan bukan prioritas utama saya dalam memilih platform investasi.', weight: 0 },
          ],
+         maxWeight: 0.2,
          scores: {
             Bibit: 9,
             Stockbit: 8,
@@ -26,12 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
       {
          question: 'Seberapa penting fitur edukasi dalam memilih platform investasi bagi Anda?',
          options: [
-            { text: 'Fitur edukasi sangat penting karena saya ingin memahami investasi dengan lebih baik sebelum memulai.', weight: 0.5 },
-            { text: 'Fitur edukasi cukup penting, namun saya lebih fokus pada kemudahan transaksi.', weight: 0.4 },
-            { text: 'Fitur edukasi agak penting, tetapi saya lebih memilih platform dengan biaya rendah.', weight: 0.3 },
-            { text: 'Fitur edukasi kurang penting, saya lebih memperhatikan aspek keamanan.', weight: 0.2 },
-            { text: 'Fitur edukasi bukan prioritas saya dalam memilih platform investasi.', weight: 0.1 },
+            { text: 'Fitur edukasi sangat penting karena saya ingin memahami investasi dengan lebih baik sebelum memulai.', weight: 1.0 },
+            { text: 'Fitur edukasi cukup penting, namun saya lebih fokus pada kemudahan transaksi.', weight: 0.75 },
+            { text: 'Fitur edukasi agak penting, tetapi saya lebih memilih platform dengan biaya rendah.', weight: 0.5 },
+            { text: 'Fitur edukasi kurang penting, saya lebih memperhatikan aspek keamanan.', weight: 0.25 },
+            { text: 'Fitur edukasi bukan prioritas saya dalam memilih platform investasi.', weight: 0 },
          ],
+         maxWeight: 0.15,
          scores: {
             Stockbit: 9,
             IPOT: 8,
@@ -44,12 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
       {
          question: 'Seberapa penting biaya transaksi dalam memilih platform investasi bagi Anda?',
          options: [
-            { text: 'Biaya transaksi yang sangat rendah adalah prioritas utama saya dalam memilih platform.', weight: 0.5 },
-            { text: 'Saya memperhatikan biaya transaksi, tetapi juga memperhitungkan fitur lain yang ditawarkan.', weight: 0.4 },
-            { text: 'Biaya transaksi menjadi pertimbangan, namun dukungan pelanggan yang berkualitas lebih penting bagi saya.', weight: 0.3 },
-            { text: 'Biaya transaksi kurang penting, terutama jika platform menyediakan berbagai instrumen investasi.', weight: 0.2 },
-            { text: 'Biaya transaksi bukan faktor utama dalam keputusan saya memilih platform investasi.', weight: 0.1 },
+            { text: 'Biaya transaksi yang sangat rendah adalah prioritas utama saya dalam memilih platform.', weight: 1.0 },
+            { text: 'Saya memperhatikan biaya transaksi, tetapi juga memperhitungkan fitur lain yang ditawarkan.', weight: 0.75 },
+            { text: 'Biaya transaksi menjadi pertimbangan, namun dukungan pelanggan yang berkualitas lebih penting bagi saya.', weight: 0.5 },
+            { text: 'Biaya transaksi kurang penting, terutama jika platform menyediakan berbagai instrumen investasi.', weight: 0.25 },
+            { text: 'Biaya transaksi bukan faktor utama dalam keputusan saya memilih platform investasi.', weight: 0 },
          ],
+         maxWeight: 0.2,
          scores: {
             Ajaib: 9,
             Bareksa: 8,
@@ -63,12 +66,13 @@ document.addEventListener('DOMContentLoaded', () => {
       {
          question: 'Seberapa penting aspek keamanan dalam memilih platform investasi bagi Anda?',
          options: [
-            { text: 'Keamanan sangat penting, karena saya ingin memastikan dana dan data pribadi saya aman.', weight: 0.5 },
-            { text: 'Keamanan cukup penting, namun saya juga memperhitungkan aspek kemudahan penggunaan.', weight: 0.4 },
-            { text: 'Keamanan agak penting, tetapi saya lebih memilih platform dengan biaya transaksi yang rendah.', weight: 0.3 },
-            { text: 'Keamanan kurang penting, saya lebih memperhatikan fitur edukasi yang ditawarkan.', weight: 0.2 },
-            { text: 'Keamanan bukan prioritas utama saya dalam memilih platform investasi.', weight: 0.1 },
+            { text: 'Keamanan sangat penting, karena saya ingin memastikan dana dan data pribadi saya aman.', weight: 1.0 },
+            { text: 'Keamanan cukup penting, namun saya juga memperhitungkan aspek kemudahan penggunaan.', weight: 0.75 },
+            { text: 'Keamanan agak penting, tetapi saya lebih memilih platform dengan biaya transaksi yang rendah.', weight: 0.5 },
+            { text: 'Keamanan kurang penting, saya lebih memperhatikan fitur edukasi yang ditawarkan.', weight: 0.25 },
+            { text: 'Keamanan bukan prioritas utama saya dalam memilih platform investasi.', weight: 0 },
          ],
+         maxWeight: 0.2,
          scores: {
             Bibit: 9,
             IPOT: 9,
@@ -81,12 +85,13 @@ document.addEventListener('DOMContentLoaded', () => {
       {
          question: 'Seberapa penting dukungan pelanggan dalam memilih platform investasi bagi Anda?',
          options: [
-            { text: 'Dukungan pelanggan sangat penting, karena saya ingin mendapatkan bantuan cepat saat mengalami masalah.', weight: 0.5 },
-            { text: 'Dukungan pelanggan cukup penting, namun saya juga mempertimbangkan biaya transaksi.', weight: 0.4 },
-            { text: 'Dukungan pelanggan agak penting, tetapi saya lebih memilih platform dengan fitur edukasi yang baik.', weight: 0.3 },
-            { text: 'Dukungan pelanggan kurang penting, saya lebih memperhatikan ketersediaan instrumen investasi.', weight: 0.2 },
-            { text: 'Dukungan pelanggan bukan faktor utama dalam keputusan saya memilih platform investasi.', weight: 0.1 },
+            { text: 'Dukungan pelanggan sangat penting, karena saya ingin mendapatkan bantuan cepat saat mengalami masalah.', weight: 1.0 },
+            { text: 'Dukungan pelanggan cukup penting, namun saya juga mempertimbangkan biaya transaksi.', weight: 0.75 },
+            { text: 'Dukungan pelanggan agak penting, tetapi saya lebih memilih platform dengan fitur edukasi yang baik.', weight: 0.5 },
+            { text: 'Dukungan pelanggan kurang penting, saya lebih memperhatikan ketersediaan instrumen investasi.', weight: 0.25 },
+            { text: 'Dukungan pelanggan bukan faktor utama dalam keputusan saya memilih platform investasi.', weight: 0 },
          ],
+         maxWeight: 0.1,
          scores: {
             Stockbit: 9,
             Bibit: 8,
@@ -99,18 +104,19 @@ document.addEventListener('DOMContentLoaded', () => {
       {
          question: 'Seberapa penting ketersediaan berbagai instrumen investasi dalam memilih platform bagi Anda?',
          options: [
-            { text: 'Ketersediaan berbagai instrumen investasi sangat penting, karena saya ingin memiliki banyak pilihan investasi.', weight: 0.5 },
-            { text: 'Ketersediaan instrumen investasi cukup penting, namun saya juga memperhatikan aspek keamanan.', weight: 0.4 },
-            { text: 'Ketersediaan instrumen investasi agak penting, tetapi saya lebih memilih platform dengan biaya transaksi yang rendah.', weight: 0.3 },
-            { text: 'Ketersediaan instrumen investasi kurang penting, saya lebih memperhatikan kemudahan penggunaan platform.', weight: 0.2 },
-            { text: 'Ketersediaan instrumen investasi bukan prioritas utama saya dalam memilih platform investasi.', weight: 0.1 },
+            { text: 'Ketersediaan berbagai instrumen investasi sangat penting, karena saya ingin memiliki banyak pilihan investasi.', weight: 1.0 },
+            { text: 'Ketersediaan instrumen investasi cukup penting, namun saya juga memperhatikan aspek keamanan.', weight: 0.75 },
+            { text: 'Ketersediaan instrumen investasi agak penting, tetapi saya lebih memilih platform dengan biaya transaksi yang rendah.', weight: 0.5 },
+            { text: 'Ketersediaan instrumen investasi kurang penting, saya lebih memperhatikan kemudahan penggunaan platform.', weight: 0.25 },
+            { text: 'Ketersediaan instrumen investasi bukan prioritas utama saya dalam memilih platform investasi.', weight: 0 },
          ],
+         maxWeight: 0.15,
          scores: {
             IPOT: 9,
-            Bareksa: 8,
-            Stockbit: 7,
-            Ajaib: 8,
-            Bibit: 6
+            Bareksa: 6,
+            Stockbit: 9,
+            Ajaib: 9,
+            Bibit: 9
          }
       }
    ];
@@ -142,11 +148,17 @@ document.addEventListener('DOMContentLoaded', () => {
       quizContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
    }
 
+   function calculateActualWeight(selectedWeight, maxWeight) {
+      return selectedWeight * maxWeight;
+   }
+
    function handleNext() {
       const selectedOption = document.querySelector('input[name="option"]:checked');
       if (selectedOption) {
-         const weight = parseFloat(selectedOption.value);
-         userWeights.push(weight);
+         const selectedWeight = parseFloat(selectedOption.value);
+         const maxWeight = questions[currentQuestionIndex].maxWeight;
+         const actualWeight = calculateActualWeight(selectedWeight, maxWeight);
+         userWeights.push(actualWeight);
          currentQuestionIndex++;
          if (currentQuestionIndex < questions.length) {
             loadQuestion();
@@ -183,9 +195,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       console.log("Total Scores Before Normalization:", totalScores);
 
-      // Normalisasi skor total
       const maxScore = Math.max(...Object.values(totalScores));
-      const normalizedScores = {};  // Pastikan normalizedScores didefinisikan
+      const normalizedScores = {};
 
       if (maxScore > 0) {
          Object.keys(totalScores).forEach(app => {
