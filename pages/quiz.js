@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Bareksa: 6,
             Stockbit: 9,
             Ajaib: 9,
-            Bibit: 9
+            Bibit: 8
          }
       }
    ];
