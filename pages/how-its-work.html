@@ -114,7 +114,6 @@
 
       <div class="mb-8 bg-white rounded-lg shadow-button py-8 px-4">
          <h2 class="text-2xl font-bold mb-4">1. Collecting User Preferences 📋</h2>
-
          <div class="font-light justify-end text-gray-500">
             <p class="font-semibold text-black">Our system gathers user preferences through a series of questions about
                the 6
@@ -129,46 +128,24 @@
             </ul>
             <p class="mt-2 font-semibold text-black">For example, here are the preferences selected by a user:</p>
             <ul class="list-disc mt-2 ml-6">
-               <li><span class="text-pink-500 font-semibold italic">Ease of Use:</span> Ease of use is very important
-                  to me
-                  as I
-                  want a platform
-                  that's easy to
-                  understand
-                  and navigate. (Weight: 0.4)</li>
+               <li><span class="text-pink-500 font-semibold italic">Ease of Use:</span> Ease of use is less important to
+                  me, as long as the platform offers strong features. (Weight: 0.25)</li>
                <li><span class="text-pink-500 font-semibold italic">Educational Features:</span> Educational features
-                  are
-                  fairly
-                  important, but
-                  I'm more focused on
-                  ease of
-                  transaction. (Weight: 0.3)</li>
+                  are somewhat important, but I prefer platforms with low fees. (Weight: 0.5)</li>
                <li><span class="text-pink-500 font-semibold italic">Transaction Costs:</span> Very low transaction costs
-                  are a top
-                  priority for
-                  me when choosing a
-                  platform.
-                  (Weight: 0.4)</li>
-               <li><span class="text-pink-500 font-semibold italic">Security:</span> Security is crucial to ensure my
-                  investments
-                  are safe.
-                  (Weight: 0.35)</li>
-               <li><span class="text-pink-500 font-semibold italic">Customer Support:</span> Responsive customer support
-                  is
-                  very
-                  important to
-                  me. (Weight: 0.3)
+                  are my top priority when choosing a platform.
+                  (Weight: 1.0)</li>
+               <li><span class="text-pink-500 font-semibold italic">Security:</span> Security is somewhat important, but
+                  I prefer platforms with low transaction costs.
+                  (Weight: 0.5)</li>
+               <li><span class="text-pink-500 font-semibold italic">Customer Support:</span> Customer support is very
+                  important because I want quick assistance when I encounter issues. (Weight: 1.0)
                </li>
                <li><span class="text-pink-500 font-semibold italic">Availability of Investment Instruments:</span>
-                  Having a
-                  wide
-                  range of
-                  investment options is
-                  important to
-                  me. (Weight: 0.25)</li>
+                  The availability of various investment instruments is very important because I want to have many
+                  investment options. (Weight: 1.0)</li>
             </ul>
          </div>
-
       </div>
 
       <div class="mb-8 bg-white rounded-lg shadow-button-pink py-8 px-4 justify-end">
@@ -196,7 +173,7 @@
 
          <div class="mt-8">
             <h2 class="text-2xl font-semibold mb-4">SAW Calculation Example</h2>
-            <p class="font-light text-gray-500">Here is the SAW calculation table based on the answers above:</p>
+            <p class="font-light text-gray-500">Here is the SAW calculation table based on the criteria and scores:</p>
             <div class="overflow-x-auto">
                <table class="table-auto w-full mt-4 border-collapse border border-gray-300 min-w-max">
                   <thead>
@@ -214,59 +191,62 @@
                   <tbody class="font-light text-gray-500">
                      <tr>
                         <td class="border border-gray-300 px-6 py-3">Bibit</td>
-                        <td class="border border-gray-300 px-6 py-3">9 * 0.4 = 3.6</td>
-                        <td class="border border-gray-300 px-6 py-3">4 * 0.3 = 1.2</td>
-                        <td class="border border-gray-300 px-6 py-3">(9 - 5) / 9 * 0.4 = 0.18</td>
-                        <td class="border border-gray-300 px-6 py-3">7 * 0.35 = 2.45</td>
-                        <td class="border border-gray-300 px-6 py-3">6 * 0.3 = 1.8</td>
-                        <td class="border border-gray-300 px-6 py-3">5 * 0.25 = 1.25</td>
-                        <td class="border border-gray-300 px-6 py-3">3.6 + 1.2 + 0.18 + 2.45 + 1.8 + 1.25 = 10.48</td>
+                        <td class="border border-gray-300 px-6 py-3">8 * 0.05 = 0.40</td>
+                        <td class="border border-gray-300 px-6 py-3">5 * 0.075 = 0.375</td>
+                        <td class="border border-gray-300 px-6 py-3">(9 - 8) / 9 * 0.2 = 0.022</td>
+                        <td class="border border-gray-300 px-6 py-3">9 * 0.1 = 0.90</td>
+                        <td class="border border-gray-300 px-6 py-3">7 * 0.1 = 0.70</td>
+                        <td class="border border-gray-300 px-6 py-3">6 * 0.15 = 0.90</td>
+                        <td class="border border-gray-300 px-6 py-3">0.40 + 0.375 + 0.022 + 0.90 + 0.70 + 0.90 = 3.297
+                        </td>
                      </tr>
                      <tr>
                         <td class="border border-gray-300 px-6 py-3">Stockbit</td>
-                        <td class="border border-gray-300 px-6 py-3">7 * 0.4 = 2.8</td>
-                        <td class="border border-gray-300 px-6 py-3">8 * 0.3 = 2.4</td>
-                        <td class="border border-gray-300 px-6 py-3">(9 - 6) / 9 * 0.4 = 0.13</td>
-                        <td class="border border-gray-300 px-6 py-3">6 * 0.35 = 2.1</td>
-                        <td class="border border-gray-300 px-6 py-3">7 * 0.3 = 2.1</td>
-                        <td class="border border-gray-300 px-6 py-3">4 * 0.25 = 1.0</td>
-                        <td class="border border-gray-300 px-6 py-3">2.8 + 2.4 + 0.13 + 2.1 + 2.1 + 1.0 = 10.53</td>
+                        <td class="border border-gray-300 px-6 py-3">9 * 0.05 = 0.45</td>
+                        <td class="border border-gray-300 px-6 py-3">6 * 0.075 = 0.45</td>
+                        <td class="border border-gray-300 px-6 py-3">(9 - 6) / 9 * 0.2 = 0.066</td>
+                        <td class="border border-gray-300 px-6 py-3">7 * 0.1 = 0.7</td>
+                        <td class="border border-gray-300 px-6 py-3">6 * 0.1 = 0.6</td>
+                        <td class="border border-gray-300 px-6 py-3">6 * 0.15 = 0.9</td>
+                        <td class="border border-gray-300 px-6 py-3">0.45 + 0.45 + 0.066 + 0.7 + 0.6 + 0.9 = 3.166</td>
                      </tr>
                      <tr>
                         <td class="border border-gray-300 px-6 py-3">IPOT</td>
-                        <td class="border border-gray-300 px-6 py-3">6 * 0.4 = 2.4</td>
-                        <td class="border border-gray-300 px-6 py-3">7 * 0.3 = 2.1</td>
-                        <td class="border border-gray-300 px-6 py-3">(9 - 4) / 9 * 0.4 = 0.22</td>
-                        <td class="border border-gray-300 px-6 py-3">8 * 0.35 = 2.8</td>
-                        <td class="border border-gray-300 px-6 py-3">5 * 0.3 = 1.5</td>
-                        <td class="border border-gray-300 px-6 py-3">6 * 0.25 = 1.5</td>
-                        <td class="border border-gray-300 px-6 py-3">2.4 + 2.1 + 0.22 + 2.8 + 1.5 + 1.5 = 10.52</td>
+                        <td class="border border-gray-300 px-6 py-3">5 * 0.05 = 0.25</td>
+                        <td class="border border-gray-300 px-6 py-3">9 * 0.075 = 0.675</td>
+                        <td class="border border-gray-300 px-6 py-3">(9 - 5) / 9 * 0.2 = 0.089</td>
+                        <td class="border border-gray-300 px-6 py-3">8 * 0.1 = 0.8</td>
+                        <td class="border border-gray-300 px-6 py-3">5 * 0.1 = 0.5</td>
+                        <td class="border border-gray-300 px-6 py-3">7 * 0.15 = 1.05</td>
+                        <td class="border border-gray-300 px-6 py-3">0.25 + 0.675 + 0.089 + 0.8 + 0.5 + 1.05 = 3.364
+                        </td>
                      </tr>
                      <tr>
                         <td class="border border-gray-300 px-6 py-3">Ajaib</td>
-                        <td class="border border-gray-300 px-6 py-3">5 * 0.4 = 2.0</td>
-                        <td class="border border-gray-300 px-6 py-3">6 * 0.3 = 1.8</td>
-                        <td class="border border-gray-300 px-6 py-3">(9 - 9) / 9 * 0.4 = 0.0</td>
-                        <td class="border border-gray-300 px-6 py-3">5 * 0.35 = 1.75</td>
-                        <td class="border border-gray-300 px-6 py-3">8 * 0.3 = 2.4</td>
-                        <td class="border border-gray-300 px-6 py-3">7 * 0.25 = 1.75</td>
-                        <td class="border border-gray-300 px-6 py-3">2.0 + 1.8 + 0.0 + 1.75 + 2.4 + 1.75 = 9.7</td>
+                        <td class="border border-gray-300 px-6 py-3">7 * 0.05 = 0.35</td>
+                        <td class="border border-gray-300 px-6 py-3">8 * 0.075 = 0.6</td>
+                        <td class="border border-gray-300 px-6 py-3">(9 - 7) / 9 * 0.2 = 0.044</td>
+                        <td class="border border-gray-300 px-6 py-3">5 * 0.1 = 0.5</td>
+                        <td class="border border-gray-300 px-6 py-3">8 * 0.1 = 0.8</td>
+                        <td class="border border-gray-300 px-6 py-3">9 * 0.15 = 1.35</td>
+                        <td class="border border-gray-300 px-6 py-3">0.35 + 0.6 + 0.044 + 0.5 + 0.8 + 1.35 = 3.644</td>
                      </tr>
                      <tr>
                         <td class="border border-gray-300 px-6 py-3">Bareksa</td>
-                        <td class="border border-gray-300 px-6 py-3">4 * 0.4 = 1.6</td>
-                        <td class="border border-gray-300 px-6 py-3">5 * 0.3 = 1.5</td>
-                        <td class="border border-gray-300 px-6 py-3">(9 - 7) / 9 * 0.4 = 0.09</td>
-                        <td class="border border-gray-300 px-6 py-3">9 * 0.35 = 3.15</td>
-                        <td class="border border-gray-300 px-6 py-3">4 * 0.3 = 1.2</td>
-                        <td class="border border-gray-300 px-6 py-3">8 * 0.25 = 2.0</td>
-                        <td class="border border-gray-300 px-6 py-3">1.6 + 1.5 + 0.09 + 3.15 + 1.2 + 2.0 = 9.54</td>
+                        <td class="border border-gray-300 px-6 py-3">6 * 0.05 = 0.3</td>
+                        <td class="border border-gray-300 px-6 py-3">7 * 0.075 = 0.525</td>
+                        <td class="border border-gray-300 px-6 py-3">(9 - 9) / 9 * 0.2 = 0.022</td>
+                        <td class="border border-gray-300 px-6 py-3">7 * 0.1 = 0.7</td>
+                        <td class="border border-gray-300 px-6 py-3">9 * 0.1 = 0.9</td>
+                        <td class="border border-gray-300 px-6 py-3">9 * 0.15 = 1.35</td>
+                        <td class="border border-gray-300 px-6 py-3">0.3 + 0.525 + 0.022 + 0.7 + 0.9 + 1.35 = 3.797</td>
                      </tr>
                   </tbody>
                </table>
             </div>
          </div>
       </div>
+
 
       <div class="mb-8 bg-white rounded-lg shadow-button-pink py-8 px-4 justify-end">
          <h2 class="text-2xl font-bold mb-4">4. Score Normalization 🔢</h2>
@@ -288,28 +268,28 @@
                <tbody class="font-light text-gray-500">
                   <tr>
                      <td class="border border-gray-300 px-4 py-2">Bibit</td>
-                     <td class="border border-gray-300 px-4 py-2">10.48</td>
-                     <td class="border border-gray-300 px-4 py-2">10.48 / 10.53 = 0.995</td>
+                     <td class="border border-gray-300 px-4 py-2">3.297</td>
+                     <td class="border border-gray-300 px-4 py-2">3.297 / 3.797 = 0.87</td>
                   </tr>
                   <tr>
                      <td class="border border-gray-300 px-4 py-2">Stockbit</td>
-                     <td class="border border-gray-300 px-4 py-2">10.53</td>
-                     <td class="border border-gray-300 px-4 py-2">10.53 / 10.53 = 1.0</td>
+                     <td class="border border-gray-300 px-4 py-2">3.166</td>
+                     <td class="border border-gray-300 px-4 py-2">3.166 / 3.797 = 0.84</td>
                   </tr>
                   <tr>
                      <td class="border border-gray-300 px-4 py-2">IPOT</td>
-                     <td class="border border-gray-300 px-4 py-2">10.52</td>
-                     <td class="border border-gray-300 px-4 py-2">10.52 / 10.53 = 0.999</td>
+                     <td class="border border-gray-300 px-4 py-2">3.364</td>
+                     <td class="border border-gray-300 px-4 py-2">3.364 / 3.797 = 0.89</td>
                   </tr>
                   <tr>
                      <td class="border border-gray-300 px-4 py-2">Ajaib</td>
-                     <td class="border border-gray-300 px-4 py-2">9.7</td>
-                     <td class="border border-gray-300 px-4 py-2">9.7 / 10.53 = 0.921</td>
+                     <td class="border border-gray-300 px-4 py-2">3.644</td>
+                     <td class="border border-gray-300 px-4 py-2">3.644 / 3.797 = 0.96</td>
                   </tr>
                   <tr>
                      <td class="border border-gray-300 px-4 py-2">Bareksa</td>
-                     <td class="border border-gray-300 px-4 py-2">9.54</td>
-                     <td class="border border-gray-300 px-4 py-2">9.54 / 10.53 = 0.906</td>
+                     <td class="border border-gray-300 px-4 py-2">3.797</td>
+                     <td class="border border-gray-300 px-4 py-2">3.797 / 3.797 = 1.00</td>
                   </tr>
                </tbody>
             </table>
@@ -321,8 +301,8 @@
          <h2 class="text-2xl font-bold mb-4">5. Final Recommendations 📊</h2>
          <p class="font-light text-gray-500">Based on the normalized scores, our system recommends:</p>
          <ul class="list-disc mt-2 ml-6 font-light text-gray-500">
-            <li>The top-scoring app as the primary recommendation: <b class="font-semibold text-black">Stockbit</b></li>
-            <li>The second highest-scoring app as an alternative: <b class="font-semibold text-black">IPOT</b></li>
+            <li>The top-scoring app as the primary recommendation: <b class="font-semibold text-black">Bareksa</b></li>
+            <li>The second highest-scoring app as an alternative: <b class="font-semibold text-black">Ajaib</b></li>
          </ul>
          <p class="mt-2 font-light text-gray-500">The system also provides brief reasons why these apps are recommended
             based on their
